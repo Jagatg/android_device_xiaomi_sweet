@@ -100,3 +100,7 @@ PRODUCT_PACKAGES += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
+
+# OTA
+PRODUCT_SYSTEM_PROPERTIES += \
+    derpfest.updater.uri=https://raw.githubusercontent.com/Jagatg/DerpFest-OTA/main/sweet.json
