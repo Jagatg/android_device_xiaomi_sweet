@@ -104,3 +104,33 @@ $(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
 # OTA
 PRODUCT_SYSTEM_PROPERTIES += \
     derpfest.updater.uri=https://raw.githubusercontent.com/Jagatg/DerpFest-OTA/main/sweet.json
+
+# Sony Dolby
+$(call inherit-product, vendor/sony/dolby/sonydolby.mk)
+$(call inherit-product, vendor/sony/dolby/dolby-vendor.mk)
+
+# Lunaris Dolby
+PRODUCT_PACKAGES += \
+    LunarisDolby
+
+PRODUCT_SOONG_NAMESPACES += \
+    packages/apps/LunarisDolby/LunarisDolby
+
+PRODUCT_PACKAGES += \
+    Contacts \
+    Dialer \
+    messaging \
+    Recorder \
+    Music \
+    Etar \
+    ExactCalculator \
+    DeskClock
+
+
+# PDF Reader
+PRODUCT_PACKAGES += \
+    Camelot
+
+
+# MIUI Camera
+$(call inherit-product, device/xiaomi/miuicamera-sweet/device.mk)
