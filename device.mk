@@ -134,3 +134,6 @@ PRODUCT_PACKAGES += \
 
 # MIUI Camera
 $(call inherit-product, device/xiaomi/miuicamera-sweet/device.mk)
+
+# BCR
+$(call inherit-product, vendor/bcr/bcr.mk)
