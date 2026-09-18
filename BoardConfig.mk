@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Build
+ALLOW_MISSING_DEPENDENCIES := true
+
 # Inherit from sm6150-common
 include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
@@ -42,3 +45,11 @@ VENDOR_SECURITY_PATCH := 2023-11-01
 
 # Inherit from proprietary files
 include vendor/xiaomi/sweet/BoardConfigVendor.mk
+
+include vendor/aicp/config/BoardConfigAicp.mk
+include vendor/aicp/config/BoardConfigKernel.mk
+include vendor/aicp/config/BoardConfigLineage.mk
+include vendor/aicp/config/BoardConfigReservedSize.mk
+include vendor/aicp/config/BoardConfigSoong.mk
+include device/lineage/sepolicy/common/sepolicy.mk
+include device/aicp/sepolicy/common/sepolicy.mk
