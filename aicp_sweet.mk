@@ -27,4 +27,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="sweet_global-user 13 TKQ1.221013.002 V14.0.9.0.TKFMIXM release-keys" \
     BuildFingerprint=Redmi/sweet_global/sweet:13/TKQ1.221013.002/V14.0.9.0.TKFMIXM:user/release-keys
 
-$(call inherit-product, vendor/lineage-priv_keys/keys.mk)
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
